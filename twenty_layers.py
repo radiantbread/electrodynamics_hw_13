@@ -10,7 +10,6 @@ d2 = 50
 wavelengths = np.linspace(500, 1200, 1000)
 
 layers = [(d1, eps1), (d2, eps2)] * 10
-print(layers)
 
 left_matrices = [lib.total_matrix(lam, layers) for lam in wavelengths]
 right_matrices = [lib.total_matrix(lam, reversed(layers)) for lam in wavelengths]
